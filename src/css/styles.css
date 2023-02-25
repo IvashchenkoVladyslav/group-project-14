@@ -1,25 +1,18 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
-
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  /* Усі заголовки на чорному фоні і підзаголовки, кнопки, а також тексти і review*/
+  --title-white: #F6F6F6;
+  /* Підзаголовок у хедері на чорному фоні, підзаголовки у модальних вікнах та грамування у меню*/
+  --subtitle-white: #D8D7D7;
+/* Текст меню ресторана на чорному фоні */
+  --small-text-white: rgba(216, 215, 215, 0.5);
+  /* На білому фоні усі тексти */
+  --title-black: #121212;
+  /* Маленькі заголовки на мейні */
+  --small-title-black: #484848;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  --transition-property: color;
+  --transition-duration: 250ms;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+  /* Підзаголовок review */
+  --review: #575757;
+  }
