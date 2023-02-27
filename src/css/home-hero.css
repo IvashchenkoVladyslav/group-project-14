@@ -2,6 +2,19 @@
 .home-hero {
     background-color: #121212;
 } 
+@media screen and (max-width: 375px) {
+    .home-hero {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (min-width: 376px) {
+    .home-hero {
+        padding-top: 50px;
+        padding-bottom: 38px;
+    }
+}
+
 .container {
     margin: 0  auto;
     padding-left: 15px;
