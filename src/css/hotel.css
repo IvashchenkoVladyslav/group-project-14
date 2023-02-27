@@ -2,7 +2,7 @@ img {
   display: block;
 }
 .hotel-hero {
-  padding: 40px 20px 0 20px;
+  padding: 40px 20px 64px 20px;
 }
 .container {
   max-width: 365px;
@@ -16,9 +16,6 @@ img {
   gap: 12px;
   margin-bottom: 40px;
 }
-.hotel-hero-item {
-}
-
 .page-hotel-title {
   text-transform: uppercase;
   font-family: 'DM Sans';
@@ -48,8 +45,7 @@ img {
   max-height: 429px;
   margin-bottom: 100px;
 }
-.hotel-hero-image-item {
-}
+
 .hotel-text {
   display: inline-block;
   font-style: normal;
@@ -61,7 +57,7 @@ img {
   text-transform: uppercase;
 }
 .hero-db-room {
-  padding-top: 64px;
+  padding: 0px 20px 64px 20px;
 }
 .hotel-db-list {
   margin-bottom: 32px;
@@ -93,3 +89,63 @@ img {
   display: flex;
   gap: 12px;
 }
+
+
+/* ================= TABLET ====================*/
+
+@media screen and (min-width: 768px) {
+  .hotel-hero {
+    padding: 40px 0;
+  }
+  .container {
+    max-width: 734px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 34px;
+    padding-right: 34px;
+  
+  }
+
+  .page-hotel-title {
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+  }
+  .hotel-hero-list {
+    margin-bottom: 54px;
+  }
+  .hotel-hero-image {
+    margin-bottom: 54px;
+  }
+  .hotel-text {
+    max-width: 338px;
+  }
+  .hotel-db-text-group {
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+  }
+  .hotel-db-btn-group {
+    justify-content: end;
+    
+  }
+  .hotel-db-list {
+    display: flex;
+    gap: 32px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+    
+    
+  }
+  .hotel-db-img-grup {
+    flex-direction: column-reverse;
+    gap: 32px;
+    margin-top: 0;
+    /* flex-shrink: 3; */
+  }
+  .hotel-db-img-grup > .hotel-db-item {
+    /* max-width: 100%; */
+  }
+}
+
