@@ -1,0 +1,114 @@
+@media screen and (min-width:768px) { 
+
+    .header-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 768px;
+        padding: 20px 32px;
+        
+    }
+
+    .social-icon-list {
+        display: flex;
+        gap: 14px;
+    }
+
+    .social-icon {
+        stroke: var(--color-icon-primary);
+        width: 24px;
+        height: 24px;
+    }
+
+    .navigation-header {
+        align-items: center;
+        gap: 246px;
+    }
+    
+
+    .logo-name {
+        font-size: 20px;
+        
+    }
+    
+    .logo-description {
+        font-size: 8px;
+        
+    }
+
+    .menu-logo {
+        width: 32px;
+        height: 32px;
+    }
+
+
+
+
+    .menu-container {
+        top: 86px;
+        height: calc(100vh - 86px);
+    
+    }
+
+
+
+
+
+
+    .social-icon-list-mob {
+        display: none;
+    }
+
+
+    /*white-theme*/
+
+    .header-wt {
+        background-color: var(--background-color-body-primaryy);
+        border-bottom:0.5px solid var(--border-bottom-color-white-theme);
+    
+    }
+    
+    .logo-name-wt {
+        font-size: 20px;
+        
+    }
+    
+    .logo-description-wt {
+        font-size: 8px;
+        
+    }
+   
+    .icon-menu-wt,
+    .icon-cross-wt {
+        stroke: var(--main-text-color);
+        
+        }
+    
+    
+    .menu-button .icon-cross-wt {
+            display: none;
+        }
+        
+    .menu-button.is-open .icon-cross-wt {
+            display: block;
+        }
+        
+    .menu-button.is-open .icon-menu-wt {
+            display: none;
+        }
+    
+
+    .social-icon-wt {
+        stroke: var(--main-text-color);
+        fill: var(--background-color-body-main);
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+   
+}
+
+
+
