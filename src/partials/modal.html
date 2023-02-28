@@ -1,0 +1,64 @@
+
+<link rel="stylesheet" href="./css/modal.css" />
+<link rel="stylesheet" href="./css/styles.css" />
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-table">
+        <button type="button" data-modal-close class="modal-close">
+            <svg class="icon-close" width="28px" height="28px">
+                <use href="./images/javascript.svg#icon-x"></use>
+            </svg>
+        </button>
+        <p class="modal-title"> BOOK<i>A TABLE</i>  </p>
+        <form class="modal-form">
+
+            <div class="modal-field">
+                <label for="user-name" class="modal-input-text">Your name</label>
+
+                <div class="input-wrap">
+                    <input type="text" class="modal-input" name="user-name" id="user-name" 
+                    placeholder="Who should book a table for?"
+                        required>
+                    <svg class="modal-input-icon" width="18px" height="18px">
+                        <use href="./images/sprite.svg#icon-person"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-field">
+                <label for="user-phone" class="modal-input-text">NUMBER OF PEOPLE</label>
+
+                <div class="input-wrap">
+                    <input type="tel" class="modal-input" name="user-phone" id="user-phone" placeholder="tel" required>
+                    <svg class="modal-input-icon" width="18px" height="24px">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-field">
+                <label for="user-email" class="modal-input-text">Email</label>
+                <div class="input-wrap">
+                    <input type="email" class="modal-input" name="user-email" id="user-email" placeholder="Email">
+                    <svg class="modal-input-icon" width="18px" height="24px">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-field">
+                <label for="user-email" class="modal-input-text">Comment</label>
+                <textarea name="user-text" id="user-text" class="modal-comment" placeholder="Text input"></textarea>
+            </div>
+
+            <div class="modal-field">
+                <input type="checkbox" id="policy" name="policy" value="true" class="modal-check visually-hidden"
+                    required>
+                <label for="policy" class="check-text">I accept the terms and conditions of the&nbsp;<a href=""
+                        class="link"><span class="link accent accent-policy"> Privacy Policy</span></a> </label>
+
+            </div>
+            <button type="submit" class="modal-button">Send</button>
+        </form>
+    </div>
+</div>
