@@ -28,27 +28,117 @@
   }
  
 
-.home-hero-title {
-   
-        margin-left: auto;
-        margin-right: auto;
-        color: var(--title-white);
-        font-size: 80px;
-        line-height: 1;
-        font-weight: 400;
-        text-align: center;
-        text-transform: uppercase;
-        }
 
-    .home-hero-feature {
-        display: flex;
+  .home-hero {
+    background-color: #121212;
+} 
+@media screen and (max-width: 767px) {
+    .home-hero {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
-    .home-hero-text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.3;
-        letter-spacing: 0.05em;
-        color: var(--title-white);
-    }
- 
+}
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.home-hero-picture {
+  position: relative;
+  margin: 0;
+  width: 335px;
+  height: 439px;
+}
+img {
+  width: 100%;
+}
+
+.home-hero-title {
+  position: absolute;
+  bottom: -30px;
+  left: 26px;
+  right: 26px;
+  margin-left: auto;
+  margin-right: auto;
   
+  color: #f6f6f6;
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.02;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+  .home-hero-buttons {
+    display: flex;
+    margin-bottom: 74px;
+    margin-top: 62px;
+    justify-content: center;
+  }
+  .home-hero-button {
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    color: #F6F6F6;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.8px solid #F6F6F6;
+    border-radius: 32px;
+    padding: 8px 18px;
+  }
+  .book-room {
+    margin-right: 20px;
+  }
+
+
+.home-hero-feature {
+  display: flex;
+  flex-direction: column;
+  width: 338px;
+}
+.home-hero-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.05em;
+  color: #f6f6f6;
+  width: 100%;
+  text-transform: uppercase;
+}
+hero-text-italic {
+  font-style: oblique;
+}
+.home-hero-text:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+
+/* tablett */
+
+@media screen and (min-width: 768px) {
+  .home-hero {
+      padding-top: 50px;
+      padding-bottom: 38px;
+      padding-left: 0;
+  }
+  .container {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  .home-hero-picture {
+    width: 542px;
+    height: 710px;
+  }
+  .home-hero-title {
+    position: absolute;
+    bottom: 82px;
+    width: 100%;
+    font-size: 150px;
+  }
+}
