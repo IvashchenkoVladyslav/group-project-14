@@ -1,0 +1,100 @@
+.restaurant-container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    outline: 2px solid crimson;
+}
+
+/*------------------ HERO -------------------*/
+
+.hero-restaurant {
+    padding-top: 40px;
+    margin: 0 auto;
+
+}
+
+.hero-restaurant-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.hero-restaurant-btn {
+    min-width: 128px;
+    height: 34px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+
+    
+}
+
+.btn-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    margin-bottom: 40px;
+    outline: 2px solid teal;
+}
+
+.hero-restaurant-text {
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.hero-restaurant-text > span {
+    font-style: italic;
+}
+
+.hero-restaurant-slider-container {
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    outline: 2px solid royalblue;
+    
+}
+
+.hero-restaurant-slider-pics {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.hero-restaurant-slider-btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    margin-right: 20px;
+}
+
+.slider-icon-inactive {
+    fill:#1212124D;
+}
+
+.slider-icon-active {
+    fill: #121212;
+}
+
+.slider-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-color: transparent;
+}
