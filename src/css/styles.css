@@ -9,9 +9,10 @@
   font-weight: bold;
   src: url(./fonts/DMSans-Bold.ttf) format("truetype");
 }
+
 @font-face {
   font-family: DMSans-bolditalic;
-  font-weight: ;
+  font-weight: 700;
   src: url(./fonts/DMSans-BoldItalic.ttf) format("truetype");
 }
 @font-face {
