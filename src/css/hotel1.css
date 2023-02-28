@@ -54,12 +54,8 @@
   
   .hotel-hero-slider-line {
     display: flex;
-  
-    /* width: 400%; */
   }
-  /* .slider-img {
-  width: 33.33%;
-  } */
+ 
   .hotel-text {
     display: inline-block;
     font-style: normal;
@@ -69,6 +65,10 @@
   
     letter-spacing: 0.05em;
     text-transform: uppercase;
+  
+    font-family: 'DM Sans'; /* Add Solomenko Yevhenii */
+    margin-top: 0; /* Add Solomenko Yevhenii */
+    margin-bottom: 0; /* Add Solomenko Yevhenii */
   }
 
   /*  double-lux */
@@ -251,10 +251,6 @@
      /* Слайдер */
   .hotel-hero-slider {
     border: 2px solid tomato;
-   
-  
-   
-   
   }
   
   .hotel-hero-slider-line {
