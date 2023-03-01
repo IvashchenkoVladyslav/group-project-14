@@ -1,6 +1,4 @@
-.hotel-hero {
-    padding: 40px 20px 64px 20px;
-  }
+
 
   h2, 
   h3,
@@ -11,6 +9,14 @@
     max-width: 365px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hotel-hero {
+    padding-top: 40px;  
+    padding-bottom: 64px;
+   
   }
   .hotel-desktop {
     display: none;
@@ -42,19 +48,72 @@
     border-radius: 32px;
     padding: 8px 18px;
   }
-  /* Слайдер */
-  .hotel-hero-slider {
-    border: 2px solid tomato;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+
+  /*____________________ Слайдер____________________ */
+  .slaider {
+    width: 350px;
+    height: 429px;
     overflow: hidden;
+    border: 2px solid rgb(85, 83, 82);
+    position: relative;
     margin-bottom: 100px;
+    
+  }
+  .hotels {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+  }
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    
   }
   
-  .hotel-hero-slider-line {
-    display: flex;
+  .bar {
+    height: 7px;
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #7a4343;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: all 0.4s ease;
   }
+  .bar:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+  }
+  .slaides {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    gap: 20px
+  }
+  .slaide {
+    width: 50%;
+    transition: all 0.6s ease;
+  }
+  
+  .slaide img {
+    width: 100%;
+    height: 100%;
+  }
+  #r1:checked ~ .s1 {
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1 {
+    margin-left: -25%;
+  }
+/* _________________________________________ */
  
   .hotel-text {
     display: inline-block;
@@ -105,10 +164,19 @@
     display: flex;
     gap: 12px;
   }
- 
+  @media screen and (max-width: 767px) {
+    .container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+  }
   /* ================= TABLET ====================*/
   
   @media screen and (min-width: 768px) {
+
     .hotel-hero {
       padding: 40px 0;
     }
@@ -155,16 +223,18 @@
       gap: 32px;
       margin-top: 0;
     }
-    .hotel-hero-slider {
-      border: 2px solid tomato;
+    .slaider {
+      width: 758px;
       max-width: 100%;
-      max-height: 429px;
-      margin-left: 0;
-  
+      height: 548px;
+      overflow: hidden;
+      border: 2px solid rgb(85, 83, 82);
+      position: relative;
       margin-bottom: 40px;
+      
     }
-    .hotel-hero-slider-line {
-      display: flex;
+    .slaides {
+      gap: 32px;
     }
   }
   
