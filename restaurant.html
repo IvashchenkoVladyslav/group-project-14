@@ -19,8 +19,11 @@
     
     
     
-    <link rel="stylesheet" href="/group-project-14/assets/restaurant-a4b519d0.css">
-    <link rel="stylesheet" href="/group-project-14/assets/desktop-4f346195.css">
+    
+    
+    
+    <link rel="stylesheet" href="/group-project-14/assets/restaurant-3c6261c1.css">
+    <link rel="stylesheet" href="/group-project-14/assets/desktop-b281da09.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -220,31 +223,59 @@
       <span>romantic dinner</span>, our menu has something for everyone.
     </p>
   </div>
+
 </section>
+
+
 
       <!-- -------------ABOUT------------- -->
       <section class="about-restaurant">
-    <div class="container">
+    <div class="restaurant-container">
         <h2 class="visually-hidden">
             About
         </h2>
-        <img 
-            src="" 
-            alt=""
-            class=""
-            >
-        <img 
-            src="" 
-            alt=""
-            class=""
-            >
-        <img 
-            src="" 
-            alt=""
-            class=""
-            >
-        <p>At Mimino, we are experts in meat preparation. Our chefs use only the finest and freshest ingredients to create delicious dishes that showcase the flavors of premium cuts of meat.</p>
-        <p>Our slow-cooking process and expert seasoning bring out the best in each dish, making for an unforgettable dining experience. Come taste the magic of meat preparation at Mimino.</p>
+        <div class="img-container">
+            <img
+                srcset="
+                    ../../img/restaurant_page/mobile/about-restaurant_1.jpg     1x
+                    ../../img/restaurant_page/mobile/about-restaurant_1-2x.jpg  2x
+                    ../../img/restaurant_page/mobile/about-restaurant_1-3x.jpg  3x
+                    "
+                src="../../img/restaurant_page/mobile/about-restaurant_1.jpg" 
+                alt=""
+                class=""
+                width="335"
+                height="443"
+                >
+            <img
+                srcset="
+                    ../../img/restaurant_page/mobile/about-restaurant_2.jpg     1x
+                    ../../img/restaurant_page/mobile/about-restaurant_2-2x.jpg  2x
+                    ../../img/restaurant_page/mobile/about-restaurant_2-3x.jpg  3x
+                    "
+                src="../../img/restaurant_page/mobile/about-restaurant_2.jpg" 
+                alt=""
+                class=""
+                width="158"
+                height="149"
+                >
+            <img
+                srcset="
+                    ../../img/restaurant_page/mobile/about-restaurant_3.jpg     1x
+                    ../../img/restaurant_page/mobile/about-restaurant_3-2x.jpg  2x
+                    ../../img/restaurant_page/mobile/about-restaurant_3-3x.jpg  3x
+                    "
+                src="../../img/restaurant_page/mobile/about-restaurant_3.jpg" 
+                alt=""
+                class=""
+                width="157"
+                height="149"
+                >
+        </div>
+        <div class="about-restaurant-text-wrap">
+            <p class="about-restaurant-text">At Mimino, we are experts in meat <span>preparation</span>. Our chefs use only the finest and freshest ingredients to <span>create delicious dishes</span> that showcase the flavors of premium cuts of meat.</p>
+            <p class="about-restaurant-text">Our <span>slow-cooking process</span> and expert seasoning bring out the best in each dish, making for an unforgettable dining experience. Come taste the magic of <span>meat preparation</span> at Mimino.</p>
+        </div>
     </div>
 </section>
       <!-- ---------------RESTAURANT------------ -->
@@ -409,7 +440,56 @@
 </section>
     </main>
     <!-- FOOTER -->
+    <footer class="footer">
+        <section class="footer-section">
+
+
+
+
+
+        <nav class="nav-footer">
+
+            <ul   class="navigation-list-footer">
     
+                <li class="navigation-item-footer" > 
+                    <a href="../index.html" class="navigation-home" >home</a>
+                 </li>
+                <li class="navigation-item-footer" > 
+                    <a href="../hotel-page.html" class="navigation-hotel" >hotel</a>
+                </li>
+                <li class="navigation-item-footer" >
+                     <a href="../restaurant.html" class="navigation-restaurant" >restaurant</a> 
+                    </li>
+            </ul>
+
+            <a href="../index.html" lang="en" class="logo-name-footer">Mimino</span><span class="logo-description-footer">restaurant-hotel complex</span></a>
+
+        </nav>
+
+            <ul class="social-list-footer">
+                            <li> <a href="https://www.instagram.com/accounts/login/"> 
+                                <svg class="social-icon-footer">
+                                <use href="../img/sprite.svg#icon-instagram"></use>
+                                </svg> 
+                                 </a>
+                            </li>
+                            <li> <a href="https://uk-ua.facebook.com/"> 
+                                <svg class="social-icon-footer">
+                                <use href="../img/sprite.svg#icon-facebook"></use>
+                                </svg> 
+                                </a> 
+                            </li>
+                            <li> <a href="https://twitter.com/twitter?lang=uk"> 
+                                <svg class="social-icon-footer">
+                                <use href="../img/sprite.svg#icon-twitter"></use>
+                                </svg> 
+                                </a>
+                             </li>
+            </ul>
+
+        </section>
+
+    </footer>
 
     <!-- Скрипт для роботи мобільного меню -->
     <script src="./main.js"></script>
