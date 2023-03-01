@@ -55,7 +55,7 @@
     width: 350px;
     height: 429px;
     overflow: hidden;
-    border: 2px solid rgb(85, 83, 82);
+    /* border: 2px solid rgb(85, 83, 82); */
     position: relative;
     margin-bottom: 100px;
     
@@ -228,7 +228,7 @@
       max-width: 100%;
       height: 548px;
       overflow: hidden;
-      border: 2px solid rgb(85, 83, 82);
+      /* border: 2px solid rgb(85, 83, 82); */
       position: relative;
       margin-bottom: 40px;
       
