@@ -29,11 +29,17 @@ img {
 }
 
 .about {
-  width: 375px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
+.container {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .about-list {
   display: flex;
   flex-wrap: wrap;
@@ -151,14 +157,21 @@ img {
 
 @media screen and (min-width: 768px) {
   .about {
-    width: 704px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .about-item {
     width: 482px;
     margin-top: 32px;
   }
-
+  .container {
+    max-width: 704px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
   .bath-room {
     max-width: 404px;
     position: absolute;
@@ -201,7 +214,16 @@ img {
 
 @media screen and (min-width: 1440px) {
   .about {
-    width: 1376px;
+    padding-top: 100px;
+    padding-top: 100px;
+  }
+
+  .container {
+    max-width: 1376px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .bath-room {
     max-width: 439px;
