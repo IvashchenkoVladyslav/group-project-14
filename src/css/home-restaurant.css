@@ -34,7 +34,7 @@ button {
 }
 
 .container {
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
 }
 
 @media screen and (min-width: 375px) {
@@ -49,6 +49,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .container {
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 32px;
     padding-right: 32px;
     width: 768px;
@@ -69,7 +71,7 @@ button {
   .home-restaurant {
     margin-bottom: 64px;
   }
-
+  
   .home-restaurant-title-call {
     padding-left: 1px;
     padding-right: 95px;
@@ -190,10 +192,19 @@ button {
   .home-hotel-img {
     display: flex;
     justify-content: space-between;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 20px;
     margin-top: 27px;
     margin-bottom: 82px;
   }
-
+  .mainpg-hotel-div2 {
+    display: none;
+  }
+  .mainpg-hotel-div1 {
+    display: flex;
+    gap: 20px;
+  }
   .home-hotel-btn {
     display: flex;
     justify-content: center;
@@ -410,10 +421,23 @@ button {
 
   .home-hotel-img {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
     margin-bottom: 48px;
   }
-
+  .mainpg-hotel-div1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 176px;
+    row-gap:32px;
+  }
+  .mainpg-hotel-div2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 176px;
+    row-gap:32px;
+  }
   .home-hotel-btn {
     display: flex;
     justify-content: center;
@@ -496,7 +520,7 @@ button {
   }
 }
 
-/* Desktop styles */
+/* ==================Desktop styles 1440 =================== */
 /* Home Restaurant  */
 
 @media screen and (min-width: 1440px) {
@@ -571,7 +595,7 @@ button {
     margin-bottom: 24px;
   }
 
-  /* Home Hotel */
+  /* --------------Home Hotel 1440----------- */
 
   .home-hotel {
     background-color: #121212;
@@ -593,9 +617,21 @@ button {
 
   .home-hotel-img {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 32px;
   }
-
+  .mainpg-hotel-div1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    row-gap:32px;
+  }
+  .mainpg-hotel-div2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    row-gap:32px;
+  }
   .home-hotel-nav {
     position: absolute;
     top: 0px;
