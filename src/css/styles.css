@@ -314,7 +314,7 @@ hero-text-italic {
     .home-hero-text:not(:last-child) {
     margin-right: 32px;
   } 
-  
+}
 
 @import url('./home-hero.css');
 
