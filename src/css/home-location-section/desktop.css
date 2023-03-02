@@ -1,0 +1,82 @@
+@media screen and (min-width: 1440px) {
+    .address-section {
+
+        position: relative;
+        max-width: 1440px;
+        padding-top: 100px;
+        padding-right: 215px;
+        padding-bottom: 100px;
+        padding-left: 64px;
+        background-color: var(--background-color-body-primary) ;
+        margin: 0 auto;
+    }
+
+
+    .address-heading {
+        font-size: 68px;
+
+        margin: 0;
+    }
+
+    .addres-heading-box {
+        
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        
+        gap: 32px;
+
+    } 
+
+
+    .address-box {
+        position: absolute;
+        bottom: 105px;
+        right: 215px;
+    }
+
+    .map-window {
+        width: 640px;
+        height: 524px;
+
+        background-image: url(../../img/home-location/map-desktop.jpg);
+       
+        background-position: center;
+        background-size: color;
+
+        margin: 0;
+    
+        box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+      
+    }
+
+    .phone-flexbox {
+        display: flex;
+        gap: 12px;
+
+    }
+
+    
+    .number-phone{
+        
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.2em;
+    
+    }
+
+    .address-box {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .country-location {
+        margin-bottom: 0;
+    }
+   
+    .list-phone-numbers {
+        gap: 2px;
+    }
+
+}
