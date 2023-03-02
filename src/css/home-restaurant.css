@@ -652,21 +652,17 @@ button {
     padding-bottom: 100px;
     padding: 32px;
   }
-
   .mimino-location-kapez {
     display: flex;
     flex-direction: row-reverse;
   }
-
   .mimino-location-title {
     margin-right: 352px;
     margin-left: 32px;
   }
-
   .mimino-address {
     margin-right: 70px;
   }
-
   .mimino-location-address-contact {
     justify-content: center;
     margin-left: 460px;
