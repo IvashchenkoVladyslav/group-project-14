@@ -2,426 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+  />
+  
+  <link rel="stylesheet" href="./css/home-hero.css"/>
+  
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/header-style/styles.css" />
+    <link rel="stylesheet" href="./css/header-style/tablet.css" />
+    <link rel="stylesheet" href="./css/header-style/desktop.css" />
+
+    <link rel="stylesheet" href="./css/home-location-section/styles.css" />
+    <link rel="stylesheet" href="./css/home-location-section/tablet.css" />
+    <link rel="stylesheet" href="./css/home-location-section/desktop.css" />
+
+    <link rel="stylesheet" href="./css/footer-style/styles.css" />
+    <link rel="stylesheet" href="./css/footer-style/tablet.css" />
+    <link rel="stylesheet" href="./css/footer-style/desktop.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/about.css"/>
   </head>
-  <body>
-    <!-- Home Restaurant -->
-    <section class="home-restaurant">
-      <div class="home-restaurant-div container">
-        <div class="home-restaurant-title-call">
-          <h1 class="home-restaurant-title">RESTAURANT</h1>
-          <p class="home-restaurant-call">
-            RELAX AND UNWIND WITH OUR DELICIOUS OFFERINGS, AVAILABLE ANY TIME OF
-            DAY.
-          </p>
-        </div>
-        <ul class="home-restaurant-img list">
-          <li>
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurant/desktop-1-1x.jpg 1x,
-                  ./img/restaurant/desktop-1-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurant/tablet-1-1x.jpg 1x,
-                  ./img/restaurant/tablet-1-2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurant/mobile-1-1x.jpg 1x,
-                  ./img/restaurant/mobile-1-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./img/restaurant/tablet-1-1x.jpg"
-                alt=""
-                width="336px"
-                height="309px"
-              />
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurant/desktop-2-1x.jpg 1x,
-                  ./img/restaurant/desktop-2-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <img src="./img/restaurant/desctop-2-1x.jpg" alt="" />
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurant/desktop-3-1x.jpg 1x,
-                  ./img/restaurant/desktop-3-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <img src="./img/restaurant/desctop-3-1x.jpg" alt="" />
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurant/desktop-4-1x.jpg 1x,
-                  ./img/restaurant/desktop-4-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurant/tablet-2-1x.jpg 1x,
-                  ./img/restaurant/tablet-2-2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurant/mobile-2-1x.jpg 1x,
-                  ./img/restaurant/mobile-2-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./img/restaurant/tablet-2-1x.jpg"
-                alt=""
-                width="336px"
-                height="309px"
-              />
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurant/desktop-5-1x.jpg 1x,
-                  ./img/restaurant/desktop-5-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <img src="./img/restaurant/desctop-5-1x.jpg" alt="" />
-            </picture>
-          </li>
-        </ul>
+  <body>  
+    <!-- HEADER -->
 
-        <nav class="home-restaurant-nav">
-          <ul class="home-restaurant-btn list">
-            <li>
-              <button class="home-restaurant-button">BOOK A TABLE</button>
-            </li>
-            <li>
-              <form action="page/restaurant.html" target="_blank">
-                <button class="home-restaurant-button">VIEW THE MENU</button>
-              </form>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!-- Welcome -->
-    <section class="home-welcome">
-      <div class="home-welcome-container container">
-        <div class="home-welcome-div">
-          <h2 class="home-welcome-title">
-            WELCOME TO THE EPITOME OF LUXURY AND COMFORT
-          </h2>
-          <ul class="home-welcome-text list">
-            <li class="home-welcome-description">
-              <p>
-                Our hotel rooms are elegantly designed <br />
-                with an eye for detail, ensuring that you <br />
-                have everything you need for a relaxing <br />
-                and rejuvenating stay.
-              </p>
-            </li>
-            <li class="home-welcome-desc">
-              <p>
-                Each room is equipped with the latest amenities, including plush
-                bedding, high-speed Wi-Fi, flat-screen TVs, and a coffee maker
-                to help you start your day right. Our spacious bathrooms feature
-                luxurious toiletries and towels, so you can pamper yourself in
-                complete privacy.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <picture>
-            <source
-              srcset="
-                ./img/welcome/desktop-1x.jpg 1x,
-                ./img/welcome/desktop-2x.jpg 2x
-              "
-              media="(min-width: 1440px)"
-            />
-            <source
-              srcset="
-                ./img/welcome/tablet-1x.jpg 1x,
-                ./img/welcome/tablet-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./img/welcome/mobile-1x.jpg 1x,
-                ./img/welcome/mobile-2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              src="./img/welcome/tablet-1x.jpg"
-              alt=""
-              width="704px"
-              height="799px"
-            />
-          </picture>
-        </div>
-      </div>
-    </section>
-    <!-- Home Hotel -->
-    <section class="home-hotel">
-      <div class="home-hotel-div container">
-        <div class="home-hotel-title-call">
-          <h1 class="home-hotel-title">HOTEL</h1>
-          <p class="home-hotel-call">
-            Book your stay with us now and experience the epitome of comfort and
-            luxury at our hotel. We guarantee you'll be thrilled with your
-            decision.
-          </p>
-        </div>
-        <ul class="home-hotel-img list">
-          <li>
-            <picture>
-              <source
-                srcset="
-                  ./img/hotel/desktop-1-1x.jpg 1x,
-                  ./img/hotel/desktop-1-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="
-                  ./img/hotel/tablet-1-1x.jpg 1x,
-                  ./img/hotel/tablet-1-2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./img/hotel/mobile-2-1x.jpg 1x,
-                  ./img/hotel/mobile-2-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./img/hotel/desktop-1-1x.jpg"
-                alt=""
-                width="320px"
-                height="260px"
-              />
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source
-                srcset="
-                  ./img/hotel/desktop-2-1x.jpg 1x,
-                  ./img/hotel/desktop-2-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="
-                  ./img/hotel/tablet-2-1x.jpg 1x,
-                  ./img/hotel/tablet-2-2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./img/hotel/mobile-3-1x.jpg 1x,
-                  ./img/hotel/mobile-3-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./img/hotel/desktop-2-1x.jpg"
-                alt=""
-                width="320px"
-                height="260px"
-              />
-            </picture>
-          </li>
-          <li>
-            <picture>
-              <source
-                srcset="
-                  ./img/hotel/desktop-3-1x.jpg 1x,
-                  ./img/hotel/desktop-3-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="
-                  ./img/hotel/tablet-3-1x.jpg 1x,
-                  ./img/hotel/tablet-3-2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./img/hotel/mobile-1-1x.jpg 1x,
-                  ./img/hotel/mobile-1-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./img/hotel/desktop-3-1x.jpg"
-                alt=""
-                width="420px"
-                height="548px"
-              />
-            </picture>
-          </li>
-          <li class="home-hotel-image">
-            <picture>
-              <source
-                srcset="
-                  ./img/hotel/desktop-4-1x.jpg 1x,
-                  ./img/hotel/desktop-4-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="
-                  ./img/hotel/tablet-4-1x.jpg 1x,
-                  ./img/hotel/tablet-4-2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <img src="./img/hotel/desktop-4-1x.jpg" alt="" />
-            </picture>
-          </li>
-          <li class="home-hotel-image">
-            <picture>
-              <source
-                srcset="
-                  ./img/hotel/desktop-5-1x.jpg 1x,
-                  ./img/hotel/desktop-5-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="
-                  ./img/hotel/tablet-5-1x.jpg 1x,
-                  ./img/hotel/tablet-5-2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <img src="./img/hotel/desktop-5-1x.jpg" alt="" />
-            </picture>
-          </li>
-        </ul>
 
-        <nav class="home-hotel-nav">
-          <ul class="home-hotel-btn list">
-            <li>
-              <button class="home-hotel-button">BOOK A ROOM</button>
-            </li>
-            <li>
-              <form action="page/hotel.html" target="_blank">
-                <button class="home-hotel-button">VIEW ROOM</button>
-              </form>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!-- Location -->
-    <section class="mimino-location">
-      <div class="mimino-location-map container">
-        <div class="mimino-location-kapez">
-          <h1 class="mimino-location-title">LOCATION</h1>
-          <div class="mimino-location-img">
-            <picture>
-              <source
-                srcset="
-                  ./img/location/desktop-1x.jpg 1x,
-                  ./img/location/desktop-2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="
-                  ./img/location/tablet-1x.jpg 1x,
-                  ./img/location/tablet-2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./img/location/mobile-1x.jpg 1x,
-                  ./img/location/mobile-2x.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <img
-                src="./img/location/tablet-1x.jpg"
-                alt=""
-                width="704px"
-                height="576px"
-              />
-            </picture>
+    
+    <load src="./partials/header.html" />
+    <main>
+    
+     <!-- <section class="home-hero">
+      <div class="container">
+        <div class="home-hero-picture">
+         
+          <h1 class="home-hero-title">MIMINO</h1>
+          <div class="home-hero-buttons">
+            <button type="button" class="home-hero-button book-room">book a room</button>
+            <button type="button" class="home-hero-button book-table">book a table</button>
           </div>
         </div>
-
-        <div class="mimino-location-address-contact">
-          <p class="mimino-address">
-            UKRAINE, POLTAVA,<br />ST. MARSHAL BIRYUZOV, 15
-          </p>
-          <div class="mimino-contact-div">
-            <p class="mimino-contact">CALL US:</p>
-            <ul class="mimino-contact-list list">
-              <li class="mimino-contact-item">
-                <a class="mimino-phone-number link" href="tel:(095) 555 95 33"
-                  >(095) 555 95 33</a
-                >
-              </li>
-              <li>
-                <a class="mimino-phone-number link" href="tel:(066) 849 10 89"
-                  >(066) 849 10 89</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+        <div class="home-hero-feature">
+           <p class="home-hero-text">Whether you're in the mood for a hearty breakfast,
+              a light lunch, or <span class="hero-text-italic">romantic dinner</span>,
+               our menu has something for everyone.</p>
+           <p class="home-hero-text">At hotel Mimino, we <span class="hero-text-italic">
+            believe</span> that great food should be available to everyone, no matter 
+            the time of day.</p>
+        </div>  
       </div>
-    </section>
-    <script type="module" src="/main.js"></script>
+     </section> -->
+      
+      <!----------HERO------------- -->
+      <load src="./partials/home-page/home-hero.html" />
+      <!-- -------------ABOUT------------- -->
+      <load src="./partials/home-page/home-about.html" />
+      <!-- ---------------RESTAURANT------------ -->
+      <load src="./partials/home-page/home-restaurant.html" />
+      <!-- ---------------COMPLEX--------------- -->
+      <load src="./partials/home-page/home-welcome-complex.html" />
+      <!-- -------------HOTEL------------- -->
+      <load src="./partials/home-page/home-hotels-details.html" />
+      <!-- -------------LOCATION--------------- -->
+      <load src="./partials/home-page/home-location.html" />
+    </main>
+    <!-- FOOTER -->
+    <load src="./partials/footer.html" />
+
+    <load src="./partials/modal.html"/>
+
+    <!-- Скрипт для роботи мобільного меню -->
+    <script src="./main.js"></script>
+
+
   </body>
 </html>
+  
+
