@@ -76,6 +76,10 @@
         padding-bottom: 40px;
     }
 
+
+  @import url('./home-hero.css');
+  
+
 }
 .container {
   margin: 0 auto;
@@ -267,7 +271,9 @@ hero-text-italic {
   .home-hero-text:not(:last-child) {
     margin-right: 32px;
   }
-  }
+
+}
+
 
   /* desktop */
 
@@ -310,12 +316,21 @@ hero-text-italic {
     .home-hero-text {
       width: 338px;
       margin-bottom: 0;
+
+    }
+      .home-hero-text:not(:last-child) {
+      margin-right: 32px;
+    } 
+
   }
     .home-hero-text:not(:last-child) {
     margin-right: 32px;
   } 
-}
+
+
+
 
 @import url('./home-hero.css');
 
 @import url('./about.css');
+

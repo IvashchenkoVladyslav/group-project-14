@@ -73,7 +73,7 @@ img {
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
-    outline: 2px solid crimson;
+    /* outline: 2px solid crimson; */
 }
 
 
@@ -115,7 +115,7 @@ img {
     padding: 0px;
     gap: 12px;
     margin-bottom: 40px;
-    outline: 2px solid teal;
+    /* outline: 2px solid teal; */
 }
 
 .hero-restaurant-text {
@@ -140,7 +140,7 @@ img {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
-    outline: 2px solid royalblue;
+    /* outline: 2px solid royalblue; */
     
 }
 
@@ -205,11 +205,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    outline: 2px solid yellowgreen;
-}
-
-.about-restaurant-item {
-    
+    /* outline: 2px solid yellowgreen; */
 }
 
 
@@ -222,6 +218,15 @@ img {
     color: #F7F7F7;
     padding-bottom: 96px;
 }
+
+.restaurant-menu-item::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0.2;
+}
+
 
 
 .restaurant-menu-title {
@@ -241,18 +246,19 @@ img {
     row-gap: 50px;
     max-width: 1104px;
     margin: 0 auto;
-    outline: 2px solid #d81515;
+    /* outline: 2px solid #d81515; */
 }
 
 .restaurant-menu-container {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     max-width: 515px;
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 32px;
-    outline: 2px solid rgb(220, 210, 20);
+    /* outline: 2px solid rgb(220, 210, 20); */
 }
 
 .restaurant-menu-list {
@@ -261,7 +267,7 @@ img {
     align-items: flex-start;
     padding: 0px;
     width: 100%;
-    outline: 2px solid rgb(20, 210, 220);
+    /* outline: 2px solid rgb(20, 210, 220); */
 }
 
 .restaurant-menu-item {
@@ -292,7 +298,7 @@ img {
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
-    outline: 2px solid rgb(220, 20, 170);
+    /* outline: 2px solid rgb(220, 20, 170); */
 }
 
 .menu-descr {
