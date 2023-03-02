@@ -165,6 +165,13 @@
     display: flex;
    
   }
+  @media screen and (max-width: 374px) {
+    .slaider {
+    min-width: 320px;
+    max-width: 360px;
+    
+    }
+  }
   @media screen and (max-width: 767px) {
     .container {
     max-width: 375px;
@@ -282,7 +289,7 @@
      
     }
     .absolut-text-hero {
-    bottom: 32px;
+    bottom: -32px;
     }
     .hotel-db-text-group {
       flex-wrap: nowrap;
