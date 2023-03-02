@@ -1,10 +1,10 @@
 .backdrop {
     position: fixed;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(46, 47, 66, 0.4);
-        transition: opacity 250ms ease, visibility 250ms ease;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms ease, visibility 250ms ease;
     }
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0) rotate(-180deg);
@@ -13,8 +13,9 @@
 .is-hidden {
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
-}
+    pointer-events: none;}
+
+    
 
 .modal-table {
     position: absolute;
@@ -23,44 +24,348 @@
     transform: translate(-50%, -50%) scale(1) rotate(0);
     padding: 24px;
     width: 100%;
-    min-height: 586px;
+    min-height: 528px;
     background-color: #121212;
     border-radius: 4px;
     transition: transform 250ms ease;
 }
 
 .modal-button {
+background: transparent;
+    width: 235px;
+    height: 46px;
+    color: #F6F6F6;
+    /*transition: background-color 250ms ease;*/
     font-family: 'DM Sans';
-        font-size: 14px;
-        line-height: 1.3;
-        letter-spacing: -0.02em;
-        color: #121212;
-        text-align: center;
-        text-transform: uppercase;
-        background-color: transparent;
-        border: 0.8px solid rgba(18, 18, 18, 1);
-        border-radius: 32px;
-        padding: 8px 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 0 auto;
+    display: block;
+    border: 0.8px solid #F6F6F6;
+    border-radius: 32px;
+    padding: 8px 18px;
+
 }
 
 .modal-close {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 24px;
-        width: 24px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
-        transition: background-color 250ms ease,
-            color 250ms ease, box-shadow 250ms ease;
-        display: block;
-        margin-left: auto;
-        margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    transition: color 250ms ease;
+    display: block;
+    margin-left: auto;
+    background-color: #121212;
+    border: none;
 }
 
 .modal-close:hover,
 .modal-close:focus {
     color: #FFFFFF;
-   
+
+}
+.modal-title {
+    font-style: DM Sans;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.36;
+    color: #F6F6F6;
+    margin-bottom: 40px;
+    margin-top: 0;
 }
 
+.icon-close {
+    stroke: #F6F6F6;
+    fill: #F6F6F6;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-input-text {
+    font-style: DM Sans;
+    font-size: 8px;
+    line-height: 1.5;
+    color: #F6F6F6;
+    text-align: left top;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.input-wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+    transition: border 250ms ease,
+    fill 250ms ease;
+    height: 36px;
+    background-color: #121212;
+}
+
+.input-wrap:hover .modal-input-icon,
+.input-wrap:hover .modal-input-icon:focus {
+    fill: #F6F6F6;
+    stroke: #F6F6F6;
+}
+
+
+.input-wrap:hover .modal-input {
+    background-color: #1d1d1d;
+}
+.input-wrap:focus .modal-input {
+    background-color: #1d1d1d;
+}
+
+.input-wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+    transition: border 250ms ease,
+        fill 250ms ease;
+    height: 36px;
+    background-color: #121212;
+}
+
+
+.modal-input::placeholder {
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #F6F6F6;
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    text-align: left top;
+}
+
+.input-wrap-data .modal-input-data::placeholder {
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #F6F6F6;
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    text-align: left top;
+}
+
+
+.input-wrap-data {
+    position: relative;
+}
+
+.input-wrap-name {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+    transition: border 250ms ease,
+        fill 250ms ease;
+    height: 36px;
+    background-color: #121212;
+}
+
+.input-wrap-name:hover .modal-input-icon,
+.input-wrap-name:hover .modal-input-icon:focus {
+    fill: #F6F6F6;
+    stroke: #F6F6F6;
+}
+
+
+.input-wrap-name:hover .modal-input {
+    background-color: #1d1d1d;
+}
+
+.input-wrap-name:focus .modal-input {
+    background-color: #1d1d1d;
+}
+
+
+
+.input-wrap-data {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+    transition: border 250ms ease,
+        fill 250ms ease;
+    height: 36px;
+    background-color: #121212;
+}
+
+.input-wrap-data {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+    transition: border 250ms ease,
+        fill 250ms ease;
+    height: 36px;
+    background-color: #121212;
+}
+
+.input-wrap-data:hover .modal-input-icon,
+.input-wrap-data:hover .modal-input-icon:focus {
+    fill: #F6F6F6;
+    stroke: #F6F6F6;
+}
+
+
+
+.input-wrap-data:hover .modal-input {
+    background-color: #1d1d1d;
+}
+
+.input-wrap-data:focus .modal-input {
+    background-color: #1d1d1d;
+}
+
+
+.modal-input::placeholder {
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #F6F6F6;
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    text-align: left top;
+}
+.modal-input-data::placeholder {
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #F6F6F6;
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    text-align: left top;
+}
+
+.modal-input:valid,
+.modal-input:focus {
+    color: #F6F6F6;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.modal-input-data:valid,
+.modal-input-data:focus {
+    color: #F6F6F6;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.modal-field {
+    margin-bottom: 40px ;
+
+}
+
+.modal-input {
+    background-color: #121212;
+    border: none;
+    flex: 1;
+}
+.modal-input-data {
+    background-color: #121212;
+    border: none;
+    flex: 1;
+}
+
+.modal-input-icon {
+    position: static;
+    top: 0px;
+    float: right;
+    fill: #F6F6F6;
+    stroke: #F6F6F6;
+    background-color: #121212;
+    }
+
+.popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 8px;
+    background-color: #121212;
+    border: 1px solid #f6f6f6;
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: #f6f6f6;
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    transition: background-color 250ms ease;
+}
+
+.popup-item:hover {
+    background-color: #333;
+}
+
+@media screen and (min-width: 375px) {
+   
+    }
+
+@media screen and (min-width: 768px) {
+    .modal-table  {
+        width: 628px;
+        height: 476px;
+    }
+    .modal-button {
+     width: 444px;
+    height: 52px;
+}
+
+.modal-field-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.modal-field:nth-child(1),
+.modal-field:nth-child(4) {
+    margin-left: 0;
+
+}
+
+.modal-field {
+    width: calc((100% - 32px) / 2);
+}
+.modal-field:nth-child(4) {
+    order: 1;
+}
+.modal-title {
+    margin-bottom: 60px;
+}
+
+.popup {
+    margin-left: calc((100% - 32px) / 2);
+
+}
+}
