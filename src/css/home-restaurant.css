@@ -1,0 +1,642 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  border: 1px solid tomato;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+/* Mobile styles */
+
+/* Home Restaurant */
+
+@media screen and (max-width: 767px) {
+  .home-restaurant {
+    margin-bottom: 64px;
+  }
+
+  .home-restaurant-title-call {
+    padding-left: 1px;
+    padding-right: 95px;
+  }
+
+  .home-restaurant-title {
+    color: #121212;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  .home-restaurant-call {
+    color: #121212;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+
+  .home-restaurant-img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 82px;
+  }
+
+  .home-restaurant-btn {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+  }
+
+  .home-restaurant-button {
+    color: #121212;
+    font-weight: 400;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.8px solid rgba(18, 18, 18, 1);
+    border-radius: 32px;
+    padding: 8px 18px;
+  }
+
+  /* Welcome */
+
+  .home-welcome {
+    margin-bottom: 64px;
+  }
+
+  .home-welcome-title {
+    color: #000000;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 32px;
+    line-height: 1.13;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .home-welcome-text {
+    color: #000000;
+    font-weight: 400;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .home-welcome-description {
+    margin-bottom: 32px;
+  }
+
+  /* Home Hotel */
+
+  .home-hotel {
+    background-color: #121212;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 64px;
+  }
+
+  .home-hotel-title {
+    color: #f6f6f6;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .home-hotel-call {
+    color: #f6f6f6;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+  }
+
+  .home-hotel-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px;
+    margin-bottom: 82px;
+  }
+
+  .home-hotel-btn {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+  }
+
+  .home-hotel-button {
+    color: #f6f6f6;
+    font-weight: 400;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.8px solid #f6f6f6;
+    border-radius: 32px;
+    padding: 8px 18px;
+  }
+
+  /* Location */
+
+  .mimino-location {
+    background-color: #f6f6f6;
+    margin-bottom: 64px;
+  }
+
+  .mimino-location-title {
+    color: #121212;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .mimino-location-address-contact {
+    margin-top: 32px;
+  }
+
+  .mimino-address {
+    color: #000000;
+    font-weight: 400;
+    font-family: DM Sans;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .mimino-contact {
+    color: #121212;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .mimino-contact-item {
+    margin-bottom: 4px;
+  }
+
+  .mimino-phone-number {
+    color: #121212;
+    font-weight: 400;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+}
+
+/* Tablet styles */
+/* Home Restaurant */
+
+@media screen and (min-width: 768px) {
+  .home-restaurant {
+    margin-bottom: 80px;
+  }
+
+  .home-restaurant-title-call {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  .home-restaurant-title {
+    color: #121212;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 68px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-right: 32px;
+  }
+
+  .home-restaurant-call {
+    color: #121212;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-top: 7px;
+  }
+
+  .home-restaurant-img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 108px;
+  }
+
+  .home-restaurant-btn {
+    display: flex;
+    justify-content: center;
+    column-gap: 14px;
+  }
+
+  .home-restaurant-button {
+    color: #121212;
+    font-weight: 400;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.8px solid rgba(18, 18, 18, 1);
+    border-radius: 32px;
+    padding: 8px 18px;
+  }
+
+  /* Welcome */
+
+  .home-welcome {
+    margin-bottom: 80px;
+  }
+
+  .home-welcome-title {
+    color: #000000;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-right: 266px;
+    margin-bottom: 50px;
+  }
+
+  .home-welcome-text {
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    font-weight: 400;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .home-welcome-desc {
+    width: 367px;
+  }
+
+  /* Home Hotel */
+
+  .home-hotel {
+    background-color: #121212;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    margin-bottom: 80px;
+  }
+
+  .home-hotel-title-call {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  .home-hotel-title {
+    color: #f6f6f6;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 68px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-right: 32px;
+  }
+
+  .home-hotel-call {
+    color: #f6f6f6;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-top: 7px;
+    margin-right: 80px;
+  }
+
+  .home-hotel-img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  .home-hotel-btn {
+    display: flex;
+    justify-content: center;
+    column-gap: 14px;
+  }
+
+  .home-hotel-button {
+    color: #f6f6f6;
+    font-weight: 400;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.8px solid #f6f6f6;
+    border-radius: 32px;
+    padding: 8px 24px;
+  }
+
+  /* Location */
+
+  .mimino-location {
+    background-color: #f6f6f6;
+    margin-bottom: 80px;
+  }
+
+  .mimino-location-title {
+    color: #121212;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 68px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .mimino-location-address-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  .mimino-address {
+    color: #000000;
+    font-weight: 400;
+    font-family: DM Sans;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  .mimino-contact {
+    color: #121212;
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .mimino-contact-item {
+    margin-bottom: 2px;
+  }
+
+  .mimino-phone-number {
+    color: #121212;
+    font-weight: 400;
+    font-family: DM Sans;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+}
+
+/* Desktop styles */
+/* Home Restaurant  */
+
+@media screen and (min-width: 1440px) {
+  .home-restaurant {
+    padding-top: 44px;
+    padding-bottom: 113px;
+  }
+
+  .home-restaurant-div {
+    position: relative;
+  }
+
+  .home-restaurant-title-call {
+    display: flex;
+    margin-bottom: 125px;
+  }
+
+  .home-restaurant-call {
+    margin-right: 700px;
+  }
+
+  .home-restaurant-img {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-restaurant-nav {
+    position: absolute;
+    top: 0px;
+    right: 32px;
+  }
+
+  .home-restaurant-btn {
+    display: flex;
+    justify-content: center;
+    column-gap: 14px;
+  }
+
+  .home-restaurant-button {
+    font-size: 18px;
+    line-height: 1.33;
+    padding: 9px 24px;
+  }
+
+  /* Welcome */
+
+  .home-welcome {
+    margin-bottom: 86px;
+  }
+
+  .home-welcome-container {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 32px;
+  }
+
+  .home-welcome-div {
+    margin-right: 200px;
+  }
+
+  .home-welcome-title {
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  .home-welcome-text {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .home-welcome-description {
+    margin-bottom: 24px;
+  }
+
+  /* Home Hotel */
+
+  .home-hotel {
+    background-color: #121212;
+    padding-top: 44px;
+    padding-bottom: 60px;
+  }
+
+  .home-hotel-div {
+    position: relative;
+  }
+
+  .home-hotel-title-call {
+    display: flex;
+  }
+
+  .home-hotel-call {
+    margin-right: 750px;
+  }
+
+  .home-hotel-img {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-hotel-nav {
+    position: absolute;
+    top: 0px;
+    right: 32px;
+  }
+
+  .home-hotel-button {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    padding: 9px 24px;
+  }
+
+  /* Location */
+
+  .mimino-location {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding: 32px;
+  }
+
+  .mimino-location-kapez {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .mimino-location-title {
+    margin-right: 352px;
+    margin-left: 32px;
+  }
+
+  .mimino-address {
+    margin-right: 70px;
+  }
+
+  .mimino-location-address-contact {
+    justify-content: center;
+    margin-left: 460px;
+  }
+
+  .mimino-contact-div {
+    display: flex;
+  }
+}
