@@ -89,8 +89,8 @@
  
   
   /*  Установаем ширину окна  */
-  width: 980%;
-  max-width: 80%;
+  width: 100%;
+  /* max-width: 335px; */
   
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -108,6 +108,7 @@
   transition: 0.3s all;
   color: #fff;
 }
+
 /* Стили для кнопки закрытия */
 .modal__cross {
   width: 15px;
@@ -187,7 +188,8 @@ margin-bottom: 24px;
   height: 24px;
   top: 0px;
   right: 5px;
-  fill: #F7F7F7;
+  stroke: #F7F7F7;
+ 
   pointer-events: none;
 }
 .modal-form-field {
