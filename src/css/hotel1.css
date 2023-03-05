@@ -49,8 +49,20 @@
     padding: 9px 18px;
     margin-left: 12px;
   }
-
-/* ______________modal-windows ________________*/
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+/* _______________________modal-windows______ ________________*/
 /* Стили для подложки */
 .overlay {
    
@@ -74,6 +86,7 @@
   opacity: 0;
   visibility: hidden;
  
+ 
   
   /*  Установаем ширину окна  */
   width: 980%;
@@ -88,11 +101,12 @@
   
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
-  text-align: center;
-  padding: 30px;
+  text-align: start;
+  padding: 40px 24px;
   border-radius: 3px;
-  background-color: #fff;
+  background-color:black;
   transition: 0.3s all;
+  color: #fff;
 }
 /* Стили для кнопки закрытия */
 .modal__cross {
@@ -122,9 +136,111 @@
   border-radius: 3px;
  
 }
+/* _______________form__________________ */
+
+.hotel-modal-form {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+ justify-content: start;
+ gap: 32px;
+
+}
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.hotel-form-title {
+font-family: inherit;
+font-weight: 500;
+font-size: 28px;
+line-height: 1.4;
+
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #F7F7F7;
+margin-top: 0;
+margin-bottom: 40px;
+
+}
+.hotel-modal-text {
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.1;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #F7F7F7;
+margin-bottom: 24px;
+}
+
+.modal-form-icon {
+  position: absolute;
+  width: 18px;
+  display: block;
+  height: 24px;
+  top: 0px;
+  right: 5px;
+  fill: #F7F7F7;
+  pointer-events: none;
+}
+.modal-form-field {
+  position: relative;
+}
+.modal-form-input {
+  display: block;
+  color: #D8D7D7;
+}
+.modal-form-span {
+  display: block;
+  font-weight: 400;
+font-size: 8px;
+line-height: 1.3;
+font-weight: 400;
+font-size: 8px;
+line-height: 1.5;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: #D8D7D7;
+
+margin-top: 8px;
+}
+.modal-form-input {
+
+  width: 100%;
+  background-color: #121212;
+  border: transparent;
+ 
+}
+.hotel-decor {
+  display:block;
+  height: 40px;
+  max-width: 100%;
+  border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+  
+}
+.hotel-form-btn {
+  align-self: center;
+  margin-top: 24px;
+
+  background-color: #121212;
+  color: #ffffff;
+
+  padding: 14px 48px;
+  min-width: 235px;
+  border-radius: 32px;
+  border: 0.8px solid #F7F7F7;
+}
 
 
 /* _______________________________________________ */
+
   /*____________________ Слайдер____________________ */
   .slaider {
     width: 350px;
@@ -158,7 +274,7 @@
     background-color: #dacfcf;
     opacity: 0.5;
     border-radius: 10px;
-    transition: all 0.4s ease;
+    transition: all 250ms ease;
   }
   .bar:hover {
     opacity: 1;
@@ -176,7 +292,7 @@
   }
   .slaide {
     width: 50%;
-    transition: all 0.6s ease;
+    transition: all 250ms ease;
   }
   
   .slaide img {
@@ -255,6 +371,9 @@
     padding-left: 20px;
     padding-right: 20px;
     }
+    .modal-hotel {
+      max-width: 335px;
+    }
   }
   /* ================= TABLET ====================*/
   
@@ -270,6 +389,17 @@
       padding-left: 32px;
       padding-right: 32px;
     }
+    .modal-hotel {
+      max-width: 628px;
+    }
+
+    .modal-form-field {
+      width: calc((100% - 32px) / 2);
+    }
+    .modal-container {
+     flex-direction: row;
+      
+    }
   
     .page-hotel-title {
       font-size: 80px;
@@ -283,7 +413,10 @@
     .hotel-text {
       max-width: 338px;
     }
-  
+    .hotel-form-btn {
+      min-width: 399px;
+    }
+
     /* ____________________section double-lux_____________________ */
   
     .hotel-db-text-group {
@@ -313,11 +446,24 @@
       /* border: 2px solid rgb(85, 83, 82); */
       position: relative;
       margin-bottom: 40px;
-      
     }
     .slaides {
       gap: 32px;
     }
+    /* _____________________modal-form________________________ */
+    .modal-hotel {
+      max-width: 628px;
+    }
+
+    .modal-form-field {
+      width: calc((100% - 32px) / 2);
+    }
+    .modal-container {
+     flex-direction: row;
+      
+    }
+  
+
   }
   
   /* =========================  desktop ======================= */
