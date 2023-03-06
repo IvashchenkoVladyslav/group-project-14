@@ -23,7 +23,7 @@
     
     
     
-    <link rel="stylesheet" href="/group-project-14/assets/hotel-page-1439cc7a.css">
+    <link rel="stylesheet" href="/group-project-14/assets/hotel-page-edc92cda.css">
     <link rel="stylesheet" href="/group-project-14/assets/desktop-8be01817.css">
   </head>
 
@@ -305,11 +305,29 @@
 
           <label class="modal-form-field">
             <span class="hotel-decor">
-              <input
+              <!-- <input
                 class="modal-form-input"
                 type="date"
                 placeholder="01.01.2023"
-              />
+              /> -->
+              <input 
+                type="text" 
+                id="datepicker" 
+                placeholder="TODAY"
+                class="modal-form-input">
+
+              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+              <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+              <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+              <script>
+                $(document).ready(function() {
+                $("#datepicker").datepicker({
+                dateFormat: "dd.mm.yy"
+                });
+                });
+              </script>
+
+
             </span>
             <span class="modal-form-span">check-in date</span>
             <svg class="modal-form-icon" width="20" height="20">
