@@ -3,7 +3,8 @@
     <div class="restaurant-container">
       <h1 class="hero-restaurant-title">Restaurant</h1>
       <div class="btn-wrap">
-        <button type="button" class="hero-restaurant-btn">
+        
+        <button type="button" data-modal="2" class="hero-restaurant-btn page-button js-open-modal">
           <a href="">Book a table</a>
         </button>
         <button type="button" class="hero-restaurant-btn">
@@ -94,5 +95,37 @@
   </div>
 
 </section>
+<!-------------------- modal-window -------------------------->
+<section>
+  <div class="modal modal-hotel" data-modal="2">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg
+      class="modal__cross js-modal-close"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+      />
+    </svg>
+    <div class="form-hppr">
+      <h3 class="hotel-form-title">prices per room</h3>
+      <p class="hotel-modal-text">double suite</p>
 
+      <!------------------------------ Form ------------------------------------------>
+     
+
+
+
+      
+        <button type="submit" class="hotel-form-btn button">
+          MAKE A RESERVATION
+        </button>
+      
+    </div>
+  </div>
+  <!-- Подложка под модальным окном -->
+  <div class="overlay js-overlay-modal"></div>
+  <!---------------------- /modal-window-------------------- -->
+</section>
 
