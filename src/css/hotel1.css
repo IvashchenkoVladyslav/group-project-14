@@ -197,6 +197,12 @@ margin-bottom: 24px;
   display: block;
   color: #D8D7D7;
 }
+
+.modal-form-input::-webkit-input-placeholder {
+  color: #F6F6F6;
+}
+
+
 .modal-form-span {
   display: block;
   font-weight: 400;
